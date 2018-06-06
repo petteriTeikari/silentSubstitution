@@ -18,7 +18,7 @@ function plot_separation_surfaces()
         [lambda, ratio_spectra_mat_log, peaks] = clean_ratio_spectra(vis_spectra, ratio_spectra, ratio_strings, threshold);
         
         % plot the ratio spectra
-        % plot_ratio_spectra(lambda, ratio_spectra_mat_log, ratio_strings, vis_spectra, peaks, 'asFigure')
+        plot_ratio_spectra(lambda, ratio_spectra_mat_log, ratio_strings, vis_spectra, peaks, 'asFigure')
         
         
     %% Simulate the effect of Light HBW to your photoreceptor class separability
