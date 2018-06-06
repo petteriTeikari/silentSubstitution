@@ -8,6 +8,10 @@ To pull
 
 `git pull && git submodule update --recursive --remote`
 
+To replicate the plots
+
+run `plot_separation_surfaces.m`
+
 ## "Ratio Spectra"
 
 In other words, the spectra when the separation is maximized pairwise. So we get 15 different pairs using 6 dfferent spectra. Notice also that the V means V(lambda) that is a compound function consisting of MWS and LWS sensitivities
