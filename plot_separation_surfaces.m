@@ -13,6 +13,9 @@ function plot_separation_surfaces()
         [vis_spectra, vis_spectra_retinal, ratio_spectra, ratio_strings] = ...
             generate_spectra(param);
         
+        % TODO! Re-filter the vis_spectra for 65 yr old ocular media, and
+        % see how things change with this
+        
         % clean the ratio_spectra        
         threshold = 0.1; % exclude spectral points that have sensitivity less than this
         [lambda, ratio_spectra_mat_log, peaks] = clean_ratio_spectra(vis_spectra, ratio_spectra, ratio_strings, threshold);

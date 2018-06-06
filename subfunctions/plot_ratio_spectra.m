@@ -25,7 +25,7 @@ function plot_ratio_spectra(lambda, ratio_spectra_mat, ratio_strings, vis_spectr
     s(sp) = subplot(rows, cols, sp);
         p1 = plot(lambda, vis_spectra_mat);        
         tit(sp) = title('Visual Sensitivities');
-        leg(sp) = legend(vis_names);
+        leg(sp) = legend(vis_names, 'Location', 'EastOutside');
             legend boxoff
     
     % Plot Absolute Trimmed LOG ratios
@@ -33,7 +33,7 @@ function plot_ratio_spectra(lambda, ratio_spectra_mat, ratio_strings, vis_spectr
     s(sp) = subplot(rows, cols, sp);
         p(sp,:) = plot(lambda, ratio_spectra_mat);        
         tit(sp) = title('Absolute Trimmed LOG Ratios');
-        leg(sp) = legend(ratio_strings);
+        leg(sp) = legend(ratio_strings, 'Location', 'EastOutside');
             legend boxoff
             
     % Plot Peak values
@@ -46,7 +46,7 @@ function plot_ratio_spectra(lambda, ratio_spectra_mat, ratio_strings, vis_spectr
         end
         hold off
         tit(sp) = title('Max Peak values');
-        leg(sp) = legend(ratio_strings);
+        leg(sp) = legend(ratio_strings, 'Location', 'EastOutside');
             legend boxoff
         
     % Style
